@@ -1,0 +1,9 @@
+name: Solr
+description: Extension with a SolrClient provider and a dev service
+metadata:
+  keywords:
+    - Apache Solr
+#  guide: ... # To create and publish this guide, see https://github.com/quarkiverse/quarkiverse/wiki#documenting-your-extension
+  categories:
+    - "full text search"
+  status: "preview"
