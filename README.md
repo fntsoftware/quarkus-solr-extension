@@ -1,4 +1,4 @@
-# Solrer
+# Solr
 
 Quarkus extension with a provider for
 the [Solrj](https://solr.apache.org/guide/solr/latest/deployment-guide/solrj.html) `SolrClient` and a devservice for the
