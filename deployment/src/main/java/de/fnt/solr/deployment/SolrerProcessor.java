@@ -49,7 +49,7 @@ class SolrerProcessor {
         public boolean getAsBoolean() {
             Boolean devServicesActive = ConfigProvider.getConfig().getValue("quarkus.devservices.enabled",
                     Boolean.class);
-            return launchMode == LaunchMode.DEVELOPMENT && devServicesActive && config.enabled();
+            return launchMode.isDevOrTest() && devServicesActive && config.enabled();
         }
     }
 
