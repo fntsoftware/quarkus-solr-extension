@@ -24,10 +24,11 @@ project.
 ### Prod
 
 For production usage the configurations above do not matter. Only the URL of the Solr instance to connect to needs to be
-provided:
+provided. Optionally the SolrClient can be disabled (it's enabled by default):
 
 ```properties
 quarkus.solr.url=https://mydomain.fun/solr/mycore
+quarkus.solr.enabled=false
 ```
 
 > In development mode this URL configuration is done automatically and filled with the host, port and core name of the

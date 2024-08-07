@@ -7,7 +7,7 @@ import io.smallrye.config.WithDefault;
 
 @ConfigMapping(prefix = "quarkus.solr.devservices")
 @ConfigRoot(phase = ConfigPhase.BUILD_TIME)
-public interface SolrerDevserviceConfig {
+public interface SolrDevserviceConfig {
     /**
      * Enable the Solr dev service
      *
