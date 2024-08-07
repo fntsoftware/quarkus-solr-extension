@@ -1,5 +1,6 @@
 package de.fnt.solr.runtime;
 
+import io.quarkus.arc.lookup.LookupUnlessProperty;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Produces;
 import org.apache.solr.client.solrj.SolrClient;
@@ -16,6 +17,7 @@ public class SolrClientProducer {
 
     @Produces
     @ApplicationScoped
+    @LookupUnlessProperty(name = "quarkus.solr.enabled", stringValue = "false")
     public SolrClient getClient() throws SolrServerException, IOException {
         SolrClient c = (new HttpJdkSolrClient.Builder(url)).build();
         c.ping();

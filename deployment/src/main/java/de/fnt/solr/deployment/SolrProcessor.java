@@ -1,7 +1,7 @@
 package de.fnt.solr.deployment;
 
 import de.fnt.solr.runtime.SolrClientProducer;
-import de.fnt.solr.runtime.SolrerDevserviceConfig;
+import de.fnt.solr.runtime.SolrDevserviceConfig;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.IsNormal;
 import io.quarkus.deployment.annotations.BuildStep;
@@ -17,8 +17,8 @@ import org.testcontainers.images.builder.dockerfile.statement.MultiArgsStatement
 import java.util.Map;
 import java.util.function.BooleanSupplier;
 
-class SolrerProcessor {
-    SolrerDevserviceConfig config;
+class SolrProcessor {
+    SolrDevserviceConfig config;
 
     private static final String FEATURE = "solr";
 
@@ -44,7 +44,7 @@ class SolrerProcessor {
 
     static class WantsSolrDevService implements BooleanSupplier {
         LaunchMode launchMode;
-        SolrerDevserviceConfig config;
+        SolrDevserviceConfig config;
 
         public boolean getAsBoolean() {
             Boolean devServicesActive = ConfigProvider.getConfig().getValue("quarkus.devservices.enabled",
