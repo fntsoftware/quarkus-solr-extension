@@ -1,4 +1,4 @@
-package de.fnt.solr.runtime;
+package com.fntsoftware.solr.runtime;
 
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;

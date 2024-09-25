@@ -29,6 +29,14 @@ provided. Optionally the SolrClient can be disabled (it's enabled by default):
 ```properties
 quarkus.solr.url=https://mydomain.fun/solr/mycore
 quarkus.solr.enabled=false
+quarkus.solr.request-timeout=0
+quarkus.solr.idle-timeout=60000
+quarkus.solr.connection-timeout=60000
+#quarkus.solr.default-collection=
+quarkus.solr.follow-redirects=false
+quarkus.solr.use-http1-1=false
+#quarkus.solr.auth.password=
+#quarkus.solr.auth.username=
 ```
 
 > In development mode this URL configuration is done automatically and filled with the host, port and core name of the
