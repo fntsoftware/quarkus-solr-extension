@@ -1,7 +1,7 @@
-package de.fnt.solr.deployment;
+package com.fntsoftware.solr.deployment;
 
-import de.fnt.solr.runtime.SolrClientProducer;
-import de.fnt.solr.runtime.SolrDevserviceConfig;
+import com.fntsoftware.solr.runtime.SolrClientProducer;
+import com.fntsoftware.solr.runtime.SolrDevserviceConfig;
 import io.quarkus.arc.deployment.AdditionalBeanBuildItem;
 import io.quarkus.deployment.IsNormal;
 import io.quarkus.deployment.annotations.BuildStep;
